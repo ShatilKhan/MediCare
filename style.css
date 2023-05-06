@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #e3effc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+.bottom-nav a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #4c3c3c;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.bottom-nav a i {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.add-tab {
+  background-color: #27b2b3;
+  color: #fff;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  box-shadow: 0 0;
+  color: #fff;
+}
+
+.add-tab i {
+    color: #fff;
+  }
+  
+  .add-tab:hover {
+    background-color: #18a6a7;
+  }
+  
+  .add-tab:focus {
+    outline: none;
+  }
+  
+  .add-tab:active {
+    transform: scale(0.9);
+  }
+  
+  .add-tab.active {
+    background-color: #27b2b3;
+  }
+  
+  .reminder-page {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .reminder-header {
+    font-size: 24px;
+    font-weight: 500;
+    color: #4c3c3c;
+    margin-bottom: 20px;
+  }
+  
+  .reminder-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    padding: 20px;
+    background-color: #bacfd3;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .time-grid {
+    font-size: 18px;
+    font-weight: 500;
+    color: #4c3c3c;
+  }
+  
+  .medicine-grid {
+    font-size: 18px;
+    font-weight: 500;
+    color: #4c3c3c;
+  }
+  
+  .user-page {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .user-header {
+    font-size: 24px;
+    font-weight: 500;
+    color: #4c3c3c;
+    margin-bottom: 20px;
+  }
+  
+  .user-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #bacfd3;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .user-info {
+    font-size: 18px;
+    font-weight: 500;
+    color: #4c3c3c;
+    margin-bottom: 10px;
+  }
+  
+  .add-page {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .add-header {
+    font-size: 24px;
+    font-weight: 500;
+    color: #4c3c3c;
+    margin-bottom: 20px;
+  }
+  
+  .add-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #bacfd3;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    font-size: 18px;
+    font-weight: 500;
+    color: #4c3c3c;
+    margin-bottom: 10px;
+  }
+  
+  input[type="time"],
+  input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #e3effc;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  button[type="submit"] {
+    background-color: #18a6a7;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #27b2b3;
+  }
+  
+  button[type="submit"]:focus {
+    outline: none;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .bottom-nav {
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+    }
+  
+    .add-tab i {
+      font-size: 30px;
+    }
+  }
+  
