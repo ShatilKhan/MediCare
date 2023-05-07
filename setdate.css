@@ -1,0 +1,67 @@
+/* Main container */
+.set-date-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 1rem;
+  }
+  
+  /* Form container */
+  .set-date-form {
+    width: 100%;
+    max-width: 600px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Form title */
+  .set-date-form h2 {
+    color: #2421fb;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Form input fields */
+  .set-date-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #2421fb;
+    font-size: 1.2rem;
+  }
+  
+  .set-date-form input[type="time"],
+  .set-date-form input[type="date"] {
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    font-size: 1.2rem;
+  }
+  
+  .set-date-form input[type="time"]:focus,
+  .set-date-form input[type="date"]:focus {
+    outline: none;
+    box-shadow: 0 0 5px #34d0ca;
+  }
+  
+  /* Submit button */
+  .set-date-form input[type="submit"] {
+    background-color: #2421fb;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 1rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .set-date-form input[type="submit"]:hover {
+    background-color: #1b18c7;
+  }
+  

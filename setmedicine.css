@@ -1,0 +1,72 @@
+@import url('https://fonts.cdnfonts.com/css/helvetica-neue-9');
+
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica neue, sans-serif;
+  }
+  
+  /* Main container styles */
+  .main-container {
+    width: 40%;
+    margin: 10% auto;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+  }
+  
+  .main-container h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #2421FB;
+  }
+  
+  /* Input container styles */
+  .input-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    padding: 10px 15px;
+    width: 100%;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .input-container i {
+    font-size: 1.2rem;
+    color: #2421FB;
+    margin-right: 10px;
+  }
+  
+  .input-container input {
+    flex: 1;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    font-size: 1.2rem;
+  }
+  
+  /* Button styles */
+  button {
+    background-color: #2421FB;
+    color: white;
+    border: none;
+    border-radius: 80%;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 1.2rem;
+  }
+  
+  button:hover {
+    background-color: #34D0CA;
+  }
+  
