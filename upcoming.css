@@ -32,151 +32,8 @@ body {
   color: rbga(0, 0, 0, 0.4);
 }
 
-#mra_months_bar {
-  position: relative;
-  background: #fff;
-  padding-bottom: 15px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.8);
-  overflow: hidden;
-}
 
-#mra_months_bar .row > div {
-  padding: 0;
-}
 
-#mra_months_bar ul {
-  padding: 0;
-}
-
-#mra_months_bar ul li {
-  list-style: none;
-  float: left;
-  font-size: 9px;
-  font-weight: 600;
-  padding: 6px 0;
-  text-align: center;
-  color: rgba(0, 0, 0, 0.6);
-  width: calc(100% / 7);
-}
-
-#mra_months_bar:before {
-  position: absolute;
-  content: "";
-  height: 100%;
-  width: 40px;
-  background: rgba(255, 255, 255, 1);
-  top: 0;
-  margin-left: -30px;
-  z-index: 1;
-  filter: blur(4px);
-  box-shadow: 10px 0 8px rgba(255, 255, 255, 1);
-  opacity: 0.95;
-}
-
-#mra_months_bar:after {
-  position: absolute;
-  content: "";
-  height: 100%;
-  width: 40px;
-  background: rgba(255, 255, 255, 1);
-  top: 0;
-  right: 0;
-  margin-right: -30px;
-  z-index: 1;
-  filter: blur(4px);
-  box-shadow: -10px 0 8px rgba(255, 255, 255, 1);
-  opacity: 0.95;
-}
-
-#mra_months_bar ul li.active {
-  background: rgba(9, 16, 255, 0.08);
-  color: rgba(9, 16, 255, 1);
-  border-radius: 6px;
-}
-
-#mra_date_bar {
-  position: relative;
-  background: #fff;
-  padding-top: 15px;
-  padding-bottom: 20px;
-  border-radius: 0 0 30px 30px;
-}
-
-#mra_date_bar ul {
-  padding: 0;
-}
-
-#mra_date_bar ul li {
-  list-style: none;
-  float: left;
-  text-align: center;
-  width: calc(100% / 6);
-}
-
-#mra_date_bar ul li div {
-  position: relative;
-  display: inline-block;
-  width: 80%;
-  margin: 14px 0;
-  padding: 15px 0;
-  background: #f5f6fa;
-  border-radius: 8px;
-}
-
-#mra_date_bar ul li span {
-  display: block;
-}
-
-#mra_date_bar ul li span.date {
-  font-size: 14px;
-  font-weight: 600;
-}
-
-#mra_date_bar ul li span.day {
-  font-size: 10px;
-  font-weight: 400;
-  color: rgba(0, 0, 0, 0.5);
-}
-
-#mra_date_bar ul li.active div {
-  background: rgba(9, 16, 255, 1);
-  color: rgba(255, 255, 255, 1);
-}
-
-#mra_date_bar ul li.active span.day {
-  color: rgba(255, 255, 255, 0.8);
-}
-
-#mra_date_bar ul li span.medicines {
-  position: absolute;
-  display: block;
-  text-align: center;
-  top: 0;
-  width: 100%;
-  transform: translateY(-60%);
-}
-
-#mra_date_bar ul li span.medicines span {
-  display: inline-block;
-  height: 7px;
-  width: 7px;
-  border-radius: 100%;
-}
-
-#mra_date_bar ul li.active span.medicines span {
-  border: 1px solid rgba(255, 255, 255, 0.9);
-}
-
-#mra_date_bar ul li span.medicines span.color-violet {
-  background-color: #a600f8;
-}
-#mra_date_bar ul li span.medicines span.color-orange {
-  background-color: #fd780b;
-}
-
-#mra_date_bar ul li span.medicines span.color-green {
-  background-color: #0ee36f;
-}
 
 #mra_body {
   margin-top: 20px;
@@ -389,43 +246,12 @@ body {
   color: rgba(0, 0, 0, 0.9);
 }
 
-.btnadd {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  margin-bottom: 80px;
-  margin-right: 10px;
-  background-color: rgba(9, 16, 255, 1);
-
-  color: #fff;
-  box-shadow: 10ox 10px 15px -5px rgba(9, 16, 255, 0.3);
-}
 
 
 /* New Design Starts */
 
-#mra_date {
-  font-family: Arial, sans-serif;
-  font-size: 20px;
-  font-weight: bold;
-  color: #333;
-  background-color: #f4f4f4;
-  padding: 10px;
-  border-radius: 5px;
-  cursor: pointer;
-  text-align: center;
-}
 
-#calendar-popup {
-  position: absolute;
-  top: 30%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #f4f4f4;
-  border-radius: 20px;
-  padding: 0px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-  z-index: 9999;
-  
-}
+
+
+
 
