@@ -25,7 +25,7 @@
         </div>
       </section>
   
-      <section class="col-12" id="mra_months_bar">
+      <!-- <section class="col-12" id="mra_months_bar">
         <div class="row">
           <div class="col-12">
             <ul>
@@ -41,7 +41,7 @@
         </div>
       </section>
   
-      <sectin class="col-12" id="mra_date_bar">
+      <section class="col-12" id="mra_date_bar">
         <div class="row">
           <div class="col-12">
             <ul>
@@ -101,8 +101,174 @@
             </ul>
           </div>
         </div>
-      </sectin>
+      </section> -->
   
+      <!-- <div>
+        <div id="mra_date">May 13, 2023</div>
+      </div>
+
+   
+    <div id="calendar-popup" style="display: none;">
+        
+        
+        <section class="col-12" id="mra_date_bar">
+          <div class="row">
+            <div class="col-12">
+              <ul>
+                <li>
+                  <div>
+                    <span class="medicines">
+                      <span class="color-orange"></span>
+                    </span>
+                    <span class="date">25</span>
+                    <span class="day">Fri</span>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <span class="medicines">
+                      <span class="color-violet"></span>
+                      <span class="color-orange"></span>
+                    </span>
+                    <span class="date">26</span>
+                    <span class="day">Sat</span>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <span class="date">27</span>
+                    <span class="day">Sun</span>
+                  </div>
+                </li>
+                <li class='active'>
+                  <div>
+                    <span class="medicines">
+                      <span class="color-violet"></span>
+                      <span class="color-orange"></span>
+                    </span>
+                    <span class="date">28</span>
+                    <span class="day">Mon</span>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <span class="medicines">
+                      <span class="color-orange"></span>
+                    </span>
+                    <span class="date">29</span>
+                    <span class="day">Tue</span>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <span class="medicines">
+                      <span class="color-green"></span>
+                    </span>
+                    <span class="date">30</span>
+                    <span class="day">Wed</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+    </div> -->
+
+    <!-- Reminder Buttons -->
+
+    <div class="row">
+      <div class="col-4 d-flex justify-content-center align-items-center">
+        <a href="./upcoming.html" class="btn btn-primary" style="border-radius: 20px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); width: 50%; margin: 10px auto; text-decoration: none;">
+          <i class="fas fa-calendar-alt mr-2"></i> Upcoming
+        </a>
+      </div>
+      <div class="col-4 d-flex justify-content-center align-items-center">
+        <button id="mra_date_button" class="btn btn-primary btn-round" style="width: 80%; text-decoration: none;">
+          <i class="far fa-calendar-alt"></i>  May 13
+        </button>
+      </div>
+
+      <div id="calendar-popup" style="display: none;">
+        
+        
+        <section class="col-12" id="mra_date_bar">
+          <div class="row">
+            <div class="col-12">
+              <ul>
+                <li>
+                  <div>
+                    <span class="medicines">
+                      <span class="color-orange"></span>
+                    </span>
+                    <span class="date">25</span>
+                    <span class="day">Fri</span>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <span class="medicines">
+                      <span class="color-violet"></span>
+                      <span class="color-orange"></span>
+                    </span>
+                    <span class="date">26</span>
+                    <span class="day">Sat</span>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <span class="date">27</span>
+                    <span class="day">Sun</span>
+                  </div>
+                </li>
+                <li class='active'>
+                  <div>
+                    <span class="medicines">
+                      <span class="color-violet"></span>
+                      <span class="color-orange"></span>
+                    </span>
+                    <span class="date">28</span>
+                    <span class="day">Mon</span>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <span class="medicines">
+                      <span class="color-orange"></span>
+                    </span>
+                    <span class="date">29</span>
+                    <span class="day">Tue</span>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <span class="medicines">
+                      <span class="color-green"></span>
+                    </span>
+                    <span class="date">30</span>
+                    <span class="day">Wed</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+    </div>
+
+
+
+      <div class="col-4 d-flex justify-content-center align-items-center">
+        <a href="#" class="btn btn-primary" style="border-radius: 20px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); width: 50%; margin: 10px auto; text-decoration: none;">
+          <i class="fas fa-list mr-2"></i> All Reminders
+        </a>
+      </div>
+    </div>
+    
+    
+    
+    
+
+
+
       <section class="col-12" id="mra_body">
         <div class="row mra_body_header">
           <di class="col-3">
@@ -182,13 +348,102 @@
                 <i class="fa fa-user"></i><span>My Account</span>
               </li>
             </ul>
-            <button class="btn btn-default btn-lg btnadd" type='button'>
+            <button class="btn btn-default btn-lg btnadd" type="button" onclick="openSetMedicineForm()">
               <i class="fa fa-plus"></i>
             </button>
+            
+            <div id="overlay"></div>
+            
+            <div id="setMedicineForm" class="popup">
+              <form action="./setdate.html" onsubmit="openSetDateForm(); return false;">
+                <div class="input-container">
+                  <i class="fas fa-pills"></i>
+                  <input type="text" placeholder="Medicine Name">
+                </div>
+                <div class="input-container">
+                  <i class="fas fa-sort-amount-up"></i>
+                  <input type="number" placeholder="Dosage Number">
+                </div>
+                <div class="input-container">
+                  <i class="fas fa-calendar-alt"></i>
+                  <input type="date" placeholder="Starting Date">
+                </div>
+                <div class="input-container">
+                  <i class="fas fa-clock"></i>
+                  <input type="number" placeholder="Duration (in days)">
+                </div>
+                <button type="submit">Set Reminder</button>
+              </form>
+            </div>
+            
+            
+            <div id="setDateForm" class="popup">
+              
+                <div class="set-date-form">
+                  <h2><i class="fas fa-clock"></i> Set Time & Date</h2>
+              <form action="./myreminder.html">
+                <div class="form-group">
+                  <label for="time"><i class="far fa-clock"></i> Time</label>
+                  <input type="time" id="time" name="time">
+                </div>
+                <div class="form-group">
+                  <label for="date"><i class="far fa-calendar-alt"></i> Date</label>
+                  <input type="date" id="date" name="date">
+                </div>
+                <input type="submit" value="Set Reminder">
+              </form>
+                </div>
+              
+            </div>
+            
           </div>
         </div>
       </section>
     </div>
   </div>
+  
+  <script>
+    // Add a click event listener to the mra_date element
+    // document.getElementById("mra_date").addEventListener("click", function() {
+        
+    //     document.getElementById("calendar-popup").style.display = "block";
+    // });
+
+        function openSetMedicineForm() {
+      document.getElementById("setMedicineForm").style.display = "block";
+      document.getElementById("overlay").style.display = "block";
+    }
+
+    function openSetDateForm() {
+      document.getElementById("setMedicineForm").style.display = "none";
+      document.getElementById("setDateForm").style.display = "block";
+    }
+
+    // Close pop-ups when clicking outside the forms
+    document.getElementById("overlay").addEventListener("click", function() {
+      document.getElementById("setMedicineForm").style.display = "none";
+      document.getElementById("setDateForm").style.display = "none";
+      document.getElementById("overlay").style.display = "none";
+    });
+
+    document.addEventListener("DOMContentLoaded", function() {
+  var calendarPopup = document.getElementById("calendar-popup");
+  var mraDateButton = document.getElementById("mra_date_button");
+
+  document.addEventListener("click", function(event) {
+    var target = event.target;
+
+    if (target !== mraDateButton && !calendarPopup.contains(target)) {
+      calendarPopup.style.display = "none";
+    }
+  });
+
+  mraDateButton.addEventListener("click", function() {
+    calendarPopup.style.display = "block";
+  });
+});
+
+
+</script>
 </body>
 </html>

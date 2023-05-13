@@ -202,6 +202,8 @@ body {
 
 #mra_body .mra_body_data {
   padding: 0 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
 }
 
 #mra_body .row:nth-child(2) {
@@ -233,8 +235,9 @@ body {
 }
 
 .mra_body_data .medicine_info .m_icon {
-  padding: 10px;
+  padding: 20px;
   margin-right: 20px;
+  margin-bottom: 20px;
   display: inline-block;
   height: 100%;
   border-radius: inherit;
@@ -426,131 +429,3 @@ body {
   
 }
 
-.popup {
-  display: none;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 80%;
-  max-width: 600px;
-  background-color: white;
-  border-radius: 20px;
-  padding: 2rem;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-  z-index: 9999;
-}
-
-#overlay {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 9998;
-}
-
-  /* Input container styles */
-  .input-container {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-    background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 10px;
-    padding: 10px 15px;
-    width: 100%;
-    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
-  }
-  
-  .input-container i {
-    font-size: 1.2rem;
-    color: #2421FB;
-    margin-right: 10px;
-  }
-  
-  .input-container input {
-    flex: 1;
-    border: none;
-    background-color: transparent;
-    outline: none;
-    font-size: 1.2rem;
-  }
-  
-  /* Button styles */
-  button {
-    background-color: #2421FB;
-    color: white;
-    border: none;
-    border-radius: 80%;
-    padding: 10px 20px;
-    border-radius: 10px;
-    cursor: pointer;
-    margin-top: 20px;
-    font-size: 1.2rem;
-  }
-  
-  button:hover {
-    background-color: #34D0CA;
-  }
-  
-
-
-/* Form container */
-.set-date-form {
-  width: 100%;
-  max-width: 600px;
-  background-color: white;
-  border-radius: 20px;
-  padding: 2rem;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-}
-
-/* Form title */
-.set-date-form h2 {
-  color: #2421fb;
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
-/* Form input fields */
-.set-date-form label {
-  display: block;
-  margin-bottom: 0.5rem;
-  color: #2421fb;
-  font-size: 1.2rem;
-}
-
-.set-date-form input[type="time"],
-.set-date-form input[type="date"] {
-  width: 100%;
-  padding: 1rem;
-  border: none;
-  border-radius: 5px;
-  margin-bottom: 1rem;
-  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
-  font-size: 1.2rem;
-}
-
-.set-date-form input[type="time"]:focus,
-.set-date-form input[type="date"]:focus {
-  outline: none;
-  box-shadow: 0 0 5px #34d0ca;
-}
-
-/* Submit button */
-.set-date-form input[type="submit"] {
-  background-color: #2421fb;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  padding: 1rem;
-  font-size: 1.2rem;
-  cursor: pointer;
-  transition: all 0.2s ease-in-out;
-}
-
-.set-date-form input[type="submit"]:hover {
-  background-color: #1b18c7;
-}
